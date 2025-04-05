@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yousef Sayed - Flutter Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header data-aos="fade-down">
+      <h1 data-aos="fade-down">Yousef Sayed</h1>
+      <p data-aos="fade-up">Junior Flutter Application Developer | Cairo, Egypt</p>
+      <div class="social-links">
+        <a
+          href="https://github.com/Yosuef-Sayed"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yosf-s-hafeez/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="mailto:yousef.sayed.hafeez@gmail.com">
+          <i class="far fa-envelope fa-lg"></i>
+        </a>
+        <a href="tel:+201080732653">
+          <i class="fas fa-phone fa-lg"></i>
+        </a>
+      </div>
+    </header>
+
+    <section data-aos="fade-right" class="about-section">
+      <h2>About Me</h2>
+      <p style="color: #cbd5e0; max-width: max-content">
+        A passionate Flutter Developer eager to build high-performance,
+        scalable, and user-friendly applications. Enthusiastic about
+        contributing to innovative projects, optimizing UI/UX, and continuously
+        improving through hands-on experience and collaboration.
+      </p>
+    </section>
+
+    <section class="bg-gray" data-aos="fade-left">
+      <h2>Tech Stack</h2>
+      <div class="tech-stack">
+        <span class="tech-badge">Dart / Flutter</span>
+        <span class="tech-badge">SQL Database</span>
+        <span class="tech-badge">Git / GitHub</span>
+        <span class="tech-badge">RESTful APIs</span>
+        <span class="tech-badge">Firebase / Supabase</span>
+        <span class="tech-badge">Provider</span>
+        <span class="tech-badge">GetX</span>
+        <span class="tech-badge">MVC Pattern</span>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>IBWallet (Open-Source)</h3>
+          <p>
+            Reviewed and optimized a Flutter banking app. Improved structure,
+            localization, state management (GetX), and performance.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Note It! (Closed-Source)</h3>
+          <p>
+            Developed a note-taking app with Supabase & SQLite for cloud/offline
+            sync. Focused on UX and performance.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>GDG CIC Platform (Prototype)</h3>
+          <p>
+            Built a mobile platform for GDG CIC using Flutter, MVC & Provider.
+            Designed for scalability and accessibility.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray" data-aos="fade-right">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li class="experience-item">
+          <h3>Flutter Intern – IBM</h3>
+          <p class="date">Aug 2024 – Sep 2024</p>
+          <p>
+            Optimized API performance in a banking app (-35% response time),
+            reviewed 500+ lines of code, enhanced features and efficiency.
+          </p>
+        </li>
+        <li class="experience-item">
+          <h3>Flutter Instructor – GDG On Campus CIC</h3>
+          <p class="date">Oct 2024 – Present</p>
+          <p>
+            Trained 80+ students in Flutter, ran 10+ workshops. Focused on
+            communication, mentoring, and hands-on learning.
+          </p>
+        </li>
+        <li class="experience-item">
+          <h3>Flutter Intern – Intern Intelligence</h3>
+          <p class="date">Feb 2025 – Mar 2025</p>
+          <p>
+            Built 3+ Flutter apps, integrated 10+ APIs. Boosted performance and
+            mastered new tech through self-learning.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section data-aos="zoom-in">
+      <h2>Certificates</h2>
+      <div class="certificates-grid">
+        <div class="certificate-card" data-aos="zoom-in">
+          <img
+            src="./images/Google_Coursera_Certificate.jpg"
+            alt="Google Coursera Certificate"
+          />
+        </div>
+        <div class="certificate-card" data-aos="zoom-in">
+          <img
+            src="./images/Udemy_Dart_Certificate.jpg"
+            alt="Udemy Dart Certificate"
+          />
+        </div>
+        <div class="certificate-card" data-aos="zoom-in">
+          <img
+            src="./images/BlackHorse_Certificate.jpg"
+            alt="Black Horse Certificate"
+          />
+        </div>
+        <div class="certificate-card" data-aos="zoom-in">
+          <img
+            src="./images/IBM_Intern_Certificate.jpg"
+            alt="IBM Intern Certificate"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section" data-aos="fade-down">
+      <div class="resume-content">
+        <h2>Resume</h2>
+        <a
+          href="./Yousef_Sayed_CV(Flutter).pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button"
+        >
+          View My CV
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span> Yousef Sayed. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <div id="certificate-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img id="modal-image" src="" alt="Certificate" />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
