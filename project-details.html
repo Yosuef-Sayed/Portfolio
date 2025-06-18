@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details - Yousef Sayed</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .project-detail {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .project-header {
+        margin-bottom: 2rem;
+      }
+      .project-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .project-meta {
+        color: #a0aec0;
+        margin-bottom: 1.5rem;
+      }
+      .project-screenshots {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+      .screenshot {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .screenshot:hover {
+        transform: translateY(-5px);
+      }
+      .screenshot img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .back-button {
+        display: inline-flex;
+        align-items: center;
+        color: #63b3ed;
+        text-decoration: none;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+      .back-button:hover {
+        text-decoration: underline;
+      }
+      .back-button i {
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project-detail">
+      <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      
+      <div class="project-header">
+        <h1 id="project-title">Project Title</h1>
+        <div class="project-meta">
+          <span id="project-type">Type</span> • 
+          <span id="project-date">Date</span>
+        </div>
+      </div>
+      
+      <div class="project-content">
+        <h2>Overview</h2>
+        <p id="project-description">
+          Project description will be loaded here.
+        </p>
+        
+        <h2>Technologies Used</h2>
+        <ul id="technologies-list">
+          <!-- Technologies will be added here by JavaScript -->
+        </ul>
+        
+        <h2>Screenshots</h2>
+        <div class="project-screenshots" id="screenshots-container">
+          <!-- Screenshots will be added here by JavaScript -->
+        </div>
+        
+        <div id="project-features">
+          <h2>Key Features</h2>
+          <ul id="features-list">
+            <!-- Features will be added here by JavaScript -->
+          </ul>
+        </div>
+        
+        <div id="project-links" class="mt-8">
+          <h2>Project Links</h2>
+          <div class="flex flex-wrap gap-4" id="links-container">
+            <!-- Links will be added here by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // This will be populated by the main script
+      document.addEventListener('DOMContentLoaded', function() {
+        // The project details will be loaded by project-details.js
+      });
+    </script>
+    <button id="back-to-top" title="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img id="modal-image" src="" alt="Project Screenshot">
+      </div>
+    </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Project Details Script -->
+    <script src="project-details.js"></script>
+  </body>
+</html>
